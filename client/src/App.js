@@ -21,9 +21,9 @@ function App() {
   const[r2,setR2]=useState();
   const Add=()=>{
     setR1(Number(first)+Number(sec));
-    Axios.get(`http://54.90.4.35:3001/add/${first}/and/${sec}`).then((response)=>{
-      setR2(Number(response.data.addResult));
-      console.log(response.data.addResult);
+    Axios.get(`http://54.236.28.39:3000/add/${first}/and/${sec}`).then((response)=>{
+      setR2(Number(response.data.Addition));
+      console.log(response.data.Addition);
     });
   }
   return (
